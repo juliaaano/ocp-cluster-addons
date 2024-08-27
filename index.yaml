@@ -3,6 +3,17 @@ entries:
   openshift-gitops:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2024-08-27T15:44:08.870834521Z"
+    description: Installs the OpenShift GitOps operator and configures the ArgoCD
+      instance.
+    digest: bdb566896f77e0f9c6108c63b1e0c57097cbda64b95ef9fe73e30268865b9563
+    name: openshift-gitops
+    type: application
+    urls:
+    - https://github.com/juliaaano/ocp-cluster-addons/releases/download/openshift-gitops-1.0.0/openshift-gitops-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2024-08-27T15:21:20.092837066Z"
     description: A Helm chart for Kubernetes
     digest: b5c2f0b9d131121d26ff1b3eb3fa6339b560cf1d3c193acc9f083d08883db20a
@@ -11,4 +22,4 @@ entries:
     urls:
     - https://github.com/juliaaano/ocp-cluster-addons/releases/download/openshift-gitops-0.1.0/openshift-gitops-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-27T15:21:20.092846904Z"
+generated: "2024-08-27T15:44:08.870845992Z"
