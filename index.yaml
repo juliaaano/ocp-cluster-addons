@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  openshift-gitops:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-08-27T15:21:20.092837066Z"
+    description: A Helm chart for Kubernetes
+    digest: b5c2f0b9d131121d26ff1b3eb3fa6339b560cf1d3c193acc9f083d08883db20a
+    name: openshift-gitops
+    type: application
+    urls:
+    - https://github.com/juliaaano/ocp-cluster-addons/releases/download/openshift-gitops-0.1.0/openshift-gitops-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-08-27T15:21:20.092846904Z"
