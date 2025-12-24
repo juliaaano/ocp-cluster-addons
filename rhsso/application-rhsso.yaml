@@ -7,14 +7,14 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/juliaaano/ocp-cluster-addons
+    repoURL: this
     targetRevision: main
     path: rhsso
     helm:
       values: |
         namespace: rhsso
         operator:
-          startingCSV: rhsso-operator.7.6.9-opr-002
+          startingCSV: rhsso-operator.x.y.z
           installPlanApproval: Manual
         users:
           - username: ssoadmin
@@ -34,6 +34,5 @@ spec:
               serviceAccount:
                 name: "rhsso-status-checker"
   destination:
-    namespace: rhsso
     server: https://kubernetes.default.svc
-  syncPolicy: {}
+    namespace: rhsso

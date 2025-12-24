@@ -7,14 +7,14 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/juliaaano/ocp-cluster-addons
+    repoURL: this
     targetRevision: main
     path: devspaces
     helm:
       values: |
         namespace: openshift-operators
         operator:
-          startingCSV: devspacesoperator.v3.15.0
+          startingCSV: devspacesoperator.x.y.z
           installPlanApproval: Manual
         helper-status-checker:
           approver: true
@@ -26,6 +26,5 @@ spec:
               serviceAccount:
                 name: "devspaces-status-checker"
   destination:
-    namespace: openshift-operators
     server: https://kubernetes.default.svc
-  syncPolicy: {}
+    namespace: openshift-operators
